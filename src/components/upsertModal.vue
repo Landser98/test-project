@@ -91,7 +91,6 @@ function closeDialog() {
 
 function savePerson() {
   if(form.value.validate()) {
-    console.log(1)
     emit('save')
   }
 }

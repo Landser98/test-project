@@ -133,14 +133,12 @@ function confirmDelete() {
 }
 
 function savePerson() {
-  if (selectedPerson.value) {
-    if (selectedPerson.value.id) {
+    if (selectedPerson?.value?.id) {
       emit('editPerson', selectedPerson.value)
     } else {
       emit('addPerson', selectedPerson.value)
     }
     closeEditDialog()
-  }
 }
 
 onMounted(() => {
